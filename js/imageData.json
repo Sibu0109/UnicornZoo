@@ -1,0 +1,40 @@
+{
+  "images": [
+    {
+      "name": "Image one",
+      "imgSource": "imgs/sibu/si2.jpg"
+    },
+    {
+      "name": "Image two",
+      "imgSource": "imgs/sibu/si2.jpg"
+    },
+    {
+      "name": "Image three",
+      "imgSource": "imgs/si2.jpg"
+    },
+    {
+      "name": "Image four",
+      "imgSource": "imgs/si2.jpg"
+    },
+    {
+      "name": "Image five",
+      "imgSource": "imgs/si2.jpg"
+    },
+    {
+      "name": "Image six",
+      "imgSource": "imgs/si2.jpg"
+    },
+    {
+      "name": "Image seven",
+      "imgSource": "imgs/si2.jpg"
+    },
+    {
+      "name": "Image eight",
+      "imgSource": "imgs/si2.jpg"
+    },
+    {
+      "name": "Image nine",
+      "imgSource": "imgs/si2.jpg"
+    }
+  ]
+}

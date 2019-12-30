@@ -1,0 +1,386 @@
+/*--------------------------------首頁--------------------------*/
+        #home{
+            font-family: 'Noto Sans TC','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 0.1em;
+            color: #F3F3F3;
+            opacity: 1;
+        }
+
+        #unicorn2{
+            width: 40vw;
+        }
+
+        #banner{
+            width: 99vw;
+        }
+
+        .footer{
+            background-color: #8689D2;
+            font-size: 1em;
+            letter-spacing: 0.1em;
+            color: #F3F3F3;
+        }
+
+        .intro{
+            font-size: 1em;
+            letter-spacing: 0.1em;
+            color: #797788;
+        }
+
+        .home-footer-content{
+            display: flex;
+            font-family: 'Noto Sans TC','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #F3F3F3;
+            justify-content: flex-start;
+            align-items: flex-end;
+            letter-spacing: 4.2px;
+        }
+
+        @media( max-width: 575px ){
+            .news-title{
+                background-color: #F3F3F3;
+            }
+
+            .news-point{
+                text-align: center;
+            }
+
+            #unicorn2{
+                display: none;
+            }
+
+            .footer-icon{
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+
+        /*輪播設定-淡入淡出*/
+        .carousel-fade .carousel-inner .item {
+            transition-property: opacity;
+        }
+        .carousel-fade .carousel-inner .item,
+
+        .carousel-fade .carousel-inner .active.left,
+
+        .carousel-fade .carousel-inner .active.right {
+        opacity: 0;
+        }
+        .carousel-fade .carousel-inner .active,
+
+        .carousel-fade .carousel-inner .next.left,
+
+        .carousel-fade .carousel-inner .prev.right {
+            opacity: 1;
+        }
+        .carousel-fade .carousel-inner .next,
+
+        .carousel-fade .carousel-inner .prev,
+
+        .carousel-fade .carousel-inner .active.left,
+
+        .carousel-fade .carousel-inner .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+        .carousel-fade .carousel-control {
+            z-index: 2;
+        }
+        /*輪播*/
+
+        #nav-display{
+            display: flex;
+            justify-content: space-around;
+            float: none;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #a89be0;
+        }
+
+        .navbar-center {
+            display: inline-block;
+            float: none;
+            vertical-align: top;
+        }
+        
+        .navbar-collapse-center {
+            text-align: center;
+        }
+
+        .navbar .navbar-brand {
+            color: #ffffff;
+        }
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-brand:focus {
+            background-color: #a89be0;
+            color: #c018af;
+        }
+        .navbar .navbar-text {
+            color: #ffffff;
+        }
+        .navbar .navbar-text a {
+            background-color: #a89be0;
+            color: #c018af;
+        }
+        .navbar .navbar-text a:hover,
+        .navbar .navbar-text a:focus {
+            background-color: #a89be0;
+            color: #c018af; 
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: #ffffff;
+            border-radius: .25rem;
+            margin: 0 0.25em;
+        }
+        .navbar .navbar-nav .nav-link:not(.disabled):hover,
+        .navbar .navbar-nav .nav-link:not(.disabled):focus {
+            color: #c018af;
+        }
+        .navbar .navbar-nav .dropdown-menu {
+            background-color: #a89be0;
+            border-color: #d5cff0;
+            text-align: center;
+        }
+        .navbar .navbar-nav .dropdown-menu .dropdown-item {
+            color: #ffffff;
+        }
+        .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+        .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+        .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+            color: #c018af;
+            background-color: #d5cff0;
+        }
+        .navbar .navbar-nav .dropdown-menu .dropdown-divider {
+            border-top-color: #d5cff0;
+        }
+        .navbar .navbar-nav .nav-item.active .nav-link,
+        .navbar .navbar-nav .nav-item.active .nav-link:hover,
+        .navbar .navbar-nav .nav-item.active .nav-link:focus,
+        .navbar .navbar-nav .nav-item.show .nav-link,
+        .navbar .navbar-nav .nav-item.show .nav-link:hover,
+        .navbar .navbar-nav .nav-item.show .nav-link:focus {
+            color: #c018af;
+            background-color: #d5cff0;
+        }
+        .navbar .navbar-toggle {
+            border-color: #d5cff0;
+        }
+        .navbar .navbar-toggle:hover,
+        .navbar .navbar-toggle:focus {
+            background-color: #d5cff0;
+        }
+        .navbar .navbar-toggle .navbar-toggler-icon {
+            color: #ffffff;
+        }
+        .navbar .navbar-collapse,
+        .navbar .navbar-form {
+            border-color: #ffffff;
+        }
+        .navbar .navbar-link {
+            color: #ffffff;
+        }
+        .navbar .navbar-link:hover {
+            color: #c018af;
+        }
+        
+        @media (max-width: 575px) {
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #ffffff;
+            }
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #c018af;
+            }
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #c018af;
+            background-color: #d5cff0;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #ffffff;
+            }
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #c018af;
+            }
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #c018af;
+            background-color: #d5cff0;
+            }
+        }
+        
+        @media (max-width: 991px) {
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #ffffff;
+            }
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #c018af;
+            }
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #c018af;
+            background-color: #d5cff0;
+            }
+        }
+        
+        @media (max-width: 1199px) {
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #ffffff;
+            }
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #c018af;
+            }
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #c018af;
+            background-color: #d5cff0;
+            }
+        }
+        
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #ffffff;
+        }
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #c018af;
+        }
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #c018af;
+            background-color: #d5cff0;
+        }
+
+/*--------------------關於頁-----------------------*/
+
+#about{
+    font-family: 'Noto Sans TC','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1em;
+            color: #757575;
+}
+
+.ab-header{
+    letter-spacing: 0.6em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.ab-content{
+    letter-spacing: 0.1em;
+}
+
+.ab-member{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media(max-width: 768px){
+    .footer-icon{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .ab-story{
+        text-align: center;
+    }
+}
+
+/*--------------------成員頁-----------------------*/
+.members_page{
+    font-family: 'Noto Sans TC','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1em;
+    color: #757575;
+}
+
+.profile{
+    border:solid #A89BE0;
+    border-width: 3px;
+    border-radius: 56px;
+}
+
+.member-name{
+    font: bold 2.2em Segoe UI;
+}
+
+.hiddenimg{
+    display: none;
+}
+/*
+.gallery-s{
+    display: none;
+}*/
+
+
+
+
+
+@media(max-width:768px){
+}
+@media(max-width:990px){
+    .hiddenimg{
+        display: block;
+    }
+}
+
+@media(max-width:1280px){
+    
+}
+
+
+
+/*--------------------圖文藝廊-----------------------*/
+
+
+
+/*--------------------商品頁-----------------------*/
+.goods_page{
+font-family: 'Noto Sans TC','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+letter-spacing: 0.1em;
+color: #757575;
+}
+
+.event-header{
+    text-align: center;
+}
+
+.link-color{
+    color: #8689D2;
+}
+
+.link-color:hover{
+    color: #c018af;
+}
+
+
+
+/*--------------------活動紀錄-----------------------*/
+
+.event_page{
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 0.1em;
+    color: #757575;
+}
+
+.no-event{
+    font-family: 'Noto Sans TC','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0.6em;
+    color: #757575;
+    font-weight: bold;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+}
+
+#mycanvas{
+    height: 100%; /*高度撐滿100%*/
+    display:flex;
+    justify-content: center; /*水平置中*/
+    align-items: center; /*垂直置中*/
+  }
+  
